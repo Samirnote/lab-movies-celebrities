@@ -1,0 +1,17 @@
+<h1>
+    <span>All celebrities</span>
+    <a href="/celebrities/create"><i class="fa fa-plus"></i></a>
+</h1>
+<hr>
+<table>
+    <tbody>
+{{#each celebrities}}
+    <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.occupation}}</td>
+            <td>{{this.catchPhrase}}</td>
+    </tr>
+{{/each}}
+
+</tbody>
+</table>

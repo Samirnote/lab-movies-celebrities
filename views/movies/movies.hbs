@@ -1,0 +1,18 @@
+<h1>
+    <span>All movies</span>
+    <a href="/movies/create"><i class="fa fa-plus"></i></a>
+</h1>
+<hr>
+<table>
+    <tbody>
+{{#each movies}}
+    <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.genre}}</td>
+            <td>{{this.plot}}</td>
+            <td>{{this.cast}}</td>
+    </tr>
+{{/each}}
+
+</tbody>
+</table>
